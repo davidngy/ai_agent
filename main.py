@@ -7,7 +7,6 @@ import sys
 
 def main():
     load_dotenv()
-    get_files_info()
     api_key = os.environ.get("GEMINI_API_KEY")
     client = genai.Client(api_key=api_key)
 
